@@ -1,0 +1,8 @@
+pi\service\Relatorio.class
+pi\model\PessoaJuridica.class
+pi\App.class
+pi\model\Fornecedor.class
+pi\model\Professor.class
+pi\model\Pessoa.class
+pi\model\Aluno.class
+pi\model\PessoaFisica.class

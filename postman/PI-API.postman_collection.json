@@ -1,0 +1,113 @@
+{
+  "info": {
+    "name": "PI API (Javalin)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_postman_id": "c5c6f2c3-6c9e-46e4-9b8c-a0c5d9c73dd1"
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:7000" }
+  ],
+  "item": [
+    {
+      "name": "Health",
+      "request": { "method": "GET", "url": "{{baseUrl}}/health" }
+    },
+    {
+      "name": "Alunos",
+      "item": [
+        { "name": "GET /alunos", "request": { "method": "GET", "url": "{{baseUrl}}/alunos" } },
+        { "name": "GET /alunos/{id}", "request": { "method": "GET", "url": "{{baseUrl}}/alunos/1" } },
+        {
+          "name": "POST /alunos",
+          "request": {
+            "method": "POST",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"aluno@uni.edu\",\n  \"telefone\": \"11999990000\",\n  \"nome\": \"Fulano de Tal\",\n  \"cpf\": \"00000000000\",\n  \"dataNascimento\": \"2000-01-01\",\n  \"matricula\": \"2025002\",\n  \"curso\": \"ADS\",\n  \"dataIngresso\": \"2023-02-01\"\n}"
+            },
+            "url": "{{baseUrl}}/alunos"
+          }
+        },
+        {
+          "name": "PUT /alunos/{id}",
+          "request": {
+            "method": "PUT",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"aluno@uni.edu\",\n  \"telefone\": \"11999990000\",\n  \"nome\": \"Fulano Atualizado\",\n  \"cpf\": \"00000000000\",\n  \"dataNascimento\": \"2000-01-01\",\n  \"matricula\": \"2025002\",\n  \"curso\": \"ADS\",\n  \"dataIngresso\": \"2023-02-01\"\n}"
+            },
+            "url": "{{baseUrl}}/alunos/1"
+          }
+        },
+        { "name": "DELETE /alunos/{id}", "request": { "method": "DELETE", "url": "{{baseUrl}}/alunos/1" } }
+      ]
+    },
+    {
+      "name": "Professores",
+      "item": [
+        { "name": "GET /professores", "request": { "method": "GET", "url": "{{baseUrl}}/professores" } },
+        { "name": "GET /professores/{id}", "request": { "method": "GET", "url": "{{baseUrl}}/professores/2" } },
+        {
+          "name": "POST /professores",
+          "request": {
+            "method": "POST",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"prof@uni.edu\",\n  \"telefone\": \"11988887777\",\n  \"nome\": \"Carlos\",\n  \"cpf\": \"98765432100\",\n  \"areaAtuacao\": \"Engenharia de Software\",\n  \"titulacao\": \"Mestrado\",\n  \"registroInstitucional\": \"REG-PROF-2001\"\n}"
+            },
+            "url": "{{baseUrl}}/professores"
+          }
+        },
+        {
+          "name": "PUT /professores/{id}",
+          "request": {
+            "method": "PUT",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"prof@uni.edu\",\n  \"telefone\": \"11988887777\",\n  \"nome\": \"Carlos Atualizado\",\n  \"cpf\": \"98765432100\",\n  \"areaAtuacao\": \"Engenharia de Software\",\n  \"titulacao\": \"Mestrado\",\n  \"registroInstitucional\": \"REG-PROF-2001\"\n}"
+            },
+            "url": "{{baseUrl}}/professores/2"
+          }
+        },
+        { "name": "DELETE /professores/{id}", "request": { "method": "DELETE", "url": "{{baseUrl}}/professores/2" } }
+      ]
+    },
+    {
+      "name": "Fornecedores",
+      "item": [
+        { "name": "GET /fornecedores", "request": { "method": "GET", "url": "{{baseUrl}}/fornecedores" } },
+        { "name": "GET /fornecedores/{id}", "request": { "method": "GET", "url": "{{baseUrl}}/fornecedores/3" } },
+        {
+          "name": "POST /fornecedores",
+          "request": {
+            "method": "POST",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"contato@forn.com\",\n  \"telefone\": \"1133334444\",\n  \"razaoSocial\": \"Fornecedor XYZ Ltda\",\n  \"nomeFantasia\": \"FornXYZ\",\n  \"cnpj\": \"11222333000181\",\n  \"areaAtuacao\": \"TI\",\n  \"produtosServicos\": \"Suporte e manutenção\",\n  \"registroInstitucional\": \"REG-FORN-2002\"\n}"
+            },
+            "url": "{{baseUrl}}/fornecedores"
+          }
+        },
+        {
+          "name": "PUT /fornecedores/{id}",
+          "request": {
+            "method": "PUT",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"contato@forn.com\",\n  \"telefone\": \"1133334444\",\n  \"razaoSocial\": \"Fornecedor XYZ Ltda\",\n  \"nomeFantasia\": \"FornXYZ\",\n  \"cnpj\": \"11222333000181\",\n  \"areaAtuacao\": \"TI\",\n  \"produtosServicos\": \"Suporte e manutenção atualizado\",\n  \"registroInstitucional\": \"REG-FORN-2002\"\n}"
+            },
+            "url": "{{baseUrl}}/fornecedores/3"
+          }
+        },
+        { "name": "DELETE /fornecedores/{id}", "request": { "method": "DELETE", "url": "{{baseUrl}}/fornecedores/3" } }
+      ]
+    }
+  ]
+}
+

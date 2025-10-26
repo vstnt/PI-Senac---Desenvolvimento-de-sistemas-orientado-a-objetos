@@ -1,0 +1,41 @@
+# VS Code REST Client examples
+
+### Health
+GET http://localhost:7000/health
+
+### List Alunos
+GET http://localhost:7000/alunos
+
+### Create Aluno
+POST http://localhost:7000/alunos
+Content-Type: application/json
+
+{
+  "email": "aluno@uni.edu",
+  "telefone": "11999990000",
+  "nome": "Fulano de Tal",
+  "cpf": "00000000000",
+  "dataNascimento": "2000-01-01",
+  "matricula": "2025002",
+  "curso": "ADS",
+  "dataIngresso": "2023-02-01"
+}
+
+### Update Aluno
+PUT http://localhost:7000/alunos/1
+Content-Type: application/json
+
+{
+  "email": "aluno@uni.edu",
+  "telefone": "11999990000",
+  "nome": "Fulano Atualizado",
+  "cpf": "00000000000",
+  "dataNascimento": "2000-01-01",
+  "matricula": "2025002",
+  "curso": "ADS",
+  "dataIngresso": "2023-02-01"
+}
+
+### Delete Aluno
+DELETE http://localhost:7000/alunos/1
+
