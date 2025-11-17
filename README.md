@@ -44,3 +44,113 @@ Exemplo de POST:
 Aplicação dos scripts (PostgreSQL compatível):
 - Criar estrutura: `db/ddl.sql`
 - Popular dados: `db/dml.sql`
+
+
+### Sistema de Gestão Acadêmica – Wireframes Figma
+
+## 1. Área de Login
+- Título: Área de Login
+  - Formulário:
+  - Nome do Usuário (input)
+  - Senha (input)
+  - Permanecer conectado (label)
+  - Esqueci minha senha (link)
+- Botões:
+  - [Conectar]
+
+---
+
+## 1.2 Recuperar Senha
+- Título: Recuperar Senha
+  - Formulário:
+  - Nome do Usuário (input)
+  - E-mail cadastrado (input)
+- Botões:
+  - [Voltar]
+  - [Confirmar]
+
+---
+
+
+## 2. Tela secretaria acadêmica
+
+### 2.1 Cadastro Alunos
+- Título: Cadastro
+- Formulário:	
+  - Tipo (label)
+  - Nome (input)
+  - CPF (input)
+  - Matricula (input)
+  - Curso (input)
+- Botões:
+  - [Voltar]
+  - [Confirmar]
+  - [Ajustar]
+
+---
+
+### 2.2 Cadastro Professor
+- Título: Cadastro
+- Formulário:	
+  - Tipo (label)
+  - Nome (input)
+  - CPF (input)
+  - Matricula (input)
+  - Disciplina (input)
+- Botões:
+  - [Voltar]
+  - [Confirmar]
+  - [Ajustar]
+
+---
+
+## 3. Tela Administrador
+
+### 3.1 Cadastro Alunos
+- Título: Cadastro
+- Formulário:	
+  - Tipo (label)
+  - Nome (input)
+  - CPF (input)
+  - Matricula (input)
+  - Curso (input)
+- Botões:
+  - [Voltar]
+  - [Confirmar]
+  - [Ajustar]
+
+---
+
+### 3.2 Cadastro Professor
+- Título: Cadastro
+- Formulário:	
+  - Tipo (label)
+  - Nome (input)
+  - CPF (input)
+  - Matricula (input)
+  - Disciplina (input)
+- Botões:
+  - [Voltar]
+  - [Confirmar]
+  - [Ajustar]
+
+---
+
+### 3.2 Cadastro Fornecedor
+- Título: Cadastro
+- Formulário:	
+  - Tipo (label)
+  - Razão Social (input)
+  - CNPJ (input)
+  - Endereço (input)
+  - Telefone (input)
+- Botões:
+  - [Voltar]
+  - [Confirmar]
+  - [Ajustar]
+
+
+
+
+
+
